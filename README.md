@@ -84,6 +84,22 @@ Visit `http://localhost:5173` in your browser to access the application.
    npm install
    ```
 
+## Running the Server
+
+To start the development server, use the following command:
+
+```bash
+npm run build
+npm run dev
+```
+
+or 
+
+```bash
+yarn build
+yarn dev
+```
+
 ## Usage
 
 1. Click the **Choose File** button to upload a CSV file.
