@@ -15,14 +15,14 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the repository**:
 
    ```bash
-   git clone --recurse-submodules https://github.com/your-username/csv-file-manager.git
+   git clone --recurse-submodules https://github.com/your-username/csv-file-upload.git
    ```
 
-2. **Navigate to the project directory**:
+2. **Navigate to the client directory**:
 
    ```bash
-   cd csv-file-manager/client
-   ```
+   cd /client
+   ``
 
 3. **Install dependencies**:
 
@@ -63,6 +63,26 @@ yarn dev
 ```
 
 Visit `http://localhost:5173` in your browser to access the application.
+
+## Backend 
+**Navigate to the server directory**
+```bash
+   cd csv-file-upload/server
+   ```
+
+3. **Install dependencies**:
+
+   If you are using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+   Or if you prefer npm:
+
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
