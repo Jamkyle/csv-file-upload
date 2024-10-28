@@ -12,19 +12,21 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-1. **Clone the repository**:
+**Clone the repository**:
 
-   ```bash
-   git clone --recurse-submodules https://github.com/your-username/csv-file-upload.git
-   ```
+```bash
+git clone --recurse-submodules git@github.com:Jamkyle/csv-file-upload.git
+```
 
-2. **Navigate to the client directory**:
+### CLIENT
 
-   ```bash
-   cd /client
-   ``
+**Navigate to the client directory**:
 
-3. **Install dependencies**:
+```bash
+cd /client
+```
+
+**Install dependencies**:
 
    If you are using Yarn:
 
@@ -38,53 +40,67 @@ Before you begin, ensure you have met the following requirements:
    npm install
    ```
 
-4. **Set up your environment variables**:
+**Set up your environment variables**:
 
-   Create a `.env` file in the root of the project directory and add your API URL. For example:
+Create a `.env` file in the root of the project directory and add your API URL. For example:
 
-   ```plaintext
-   VITE_API_URL=http://your-api-url.com
-   ```
+```plaintext
+VITE_API_URL=http://localhost:5000
+```
+or
+```bash
+echo "VITE_API_URL=[http://localhost:5000]" > .env
+```
 
-   Make sure to replace `http://your-api-url.com` with the actual API endpoint you will be using.
+   Make sure to replace `http://localhost:5000` with the actual API endpoint you will be using.
 
 ## Running the Application
 
 To start the development server, use the following command:
 
 ```bash
-npm run dev
+   npm run dev
 ```
 
 or 
 
 ```bash
-yarn dev
+   yarn dev
 ```
 
-Visit `http://localhost:5173` in your browser to access the application.
-
-## Backend 
+### SERVER 
 **Navigate to the server directory**
 ```bash
    cd csv-file-upload/server
-   ```
+```
 
-3. **Install dependencies**:
+**Install dependencies**:
 
-   If you are using Yarn:
+If you are using Yarn:
 
-   ```bash
-   yarn install
-   ```
+```bash
+yarn install
+```
 
-   Or if you prefer npm:
+Or if you prefer npm:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
+
 
 ## Running the Server
+
+### Environment Variables
+```env
+# .env.local
+PORT=5000
+ALLOWED_ORIGINS=http://localhost:5178,http://other.com
+```
+or
+```
+echo -e "PORT=5000\nALLOWED_ORIGINS=http://localhost:5178,http://other.com" > .env
+```
 
 To start the development server, use the following command:
 
@@ -100,7 +116,10 @@ yarn build
 yarn dev
 ```
 
+
+
 ## Usage
+Visit `http://localhost:5173` in your browser to access the application.
 
 1. Click the **Choose File** button to upload a CSV file.
 2. The application will process the file and display the results.
