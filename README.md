@@ -95,11 +95,11 @@ npm install
 ```env
 # .env.local
 PORT=5000
-ALLOWED_ORIGINS=http://localhost:5178,http://other.com
+ALLOWED_ORIGINS=http://localhost:5173,http://other.com
 ```
 or
 ```
-echo -e "PORT=5000\nALLOWED_ORIGINS=http://localhost:5178,http://other.com" > .env
+echo -e "PORT=5000\nALLOWED_ORIGINS=http://localhost:5173,http://other.com" > .env
 ```
 
 To start the development server, use the following command:
