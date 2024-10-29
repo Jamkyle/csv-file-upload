@@ -49,7 +49,7 @@ VITE_API_URL=http://localhost:5000
 ```
 or
 ```bash
-echo "VITE_API_URL=[http://localhost:5000]" > .env
+echo "VITE_API_URL=http://localhost:5000" > .env
 ```
 
    Make sure to replace `http://localhost:5000` with the actual API endpoint you will be using.
